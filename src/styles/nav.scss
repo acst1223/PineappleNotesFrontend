@@ -1,0 +1,49 @@
+$nav-li-hovered-bg-color: #eee;
+$nav-middle-box-color: #888;
+$nav-li-color: black;
+
+nav {
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      font-family: "Raleway", sans-serif;
+      position: relative;
+      transition: 0.75s ease;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $nav-li-hovered-bg-color;
+      }
+
+      .middle-box {
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        top: 30%;
+        left: 0;
+        border-right: 0.5px solid $nav-middle-box-color;
+        z-index: 0;
+      }
+
+      .middle-box-last {
+        border-right: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: $nav-li-color;
+        padding: 0.75rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        width: 100%;
+        min-width: 120px;
+      }
+    }
+  }
+}
