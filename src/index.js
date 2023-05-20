@@ -9,6 +9,7 @@ import './styles/style.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ErrorPage from './routeError';
+import HomeComponent from "./components/home";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -17,6 +18,12 @@ const router = createBrowserRouter([
         path: "/",
         element: <App />,
         errorElement: <ErrorPage />,
+        children: [
+            {
+                path: "/",
+                element: <HomeComponent />
+            }
+        ]
     },
 ]);
 

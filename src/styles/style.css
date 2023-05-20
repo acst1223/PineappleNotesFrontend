@@ -53,4 +53,21 @@ nav ul li a {
   min-width: 120px;
 }
 
+div.home {
+  position: fixed;
+  min-height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+div.home h1 {
+  font-weight: 500;
+  font-size: 5rem;
+  opacity: 0.8;
+}
+
 /*# sourceMappingURL=style.css.map */
